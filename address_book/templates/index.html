@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,13 +6,30 @@
     <title>Hello world</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
-      
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
 </head>
 <body>
-    <h1>Hello world</h1>
-
-    {% for user in users %}
-        <h2>{{user.name}}</h2>
-    {% endfor %}
+    <div class="container">
+        <div class="row">
+            {% for user in users %}
+                <div class="col l4">
+                    <div class="card medium">
+                        <div class="card-image">
+                            <img src="/static/img/{{user.avatar.url}}">
+                            <span class="card-title blue-text text-darken-2">
+                                {{user.name}}
+                            </span>
+                        </div>
+                        <div class="card-content">
+                            <p>I am a very simple card. I am good at containing small bits of information.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">This is a link</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
 </body>
 </html>
