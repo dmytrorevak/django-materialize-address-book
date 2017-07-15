@@ -3,28 +3,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hello world</title>
+    <title>Address book</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
 </head>
-<body>
+<body class="brown lighten-4">
     <div class="container">
         <div class="row">
-            {% for user in users %}
+            {% for contact in contacts %}
                 <div class="col l4">
                     <div class="card medium">
                         <div class="card-image">
-                            <img src="/static/img/{{user.avatar.url}}">
-                            <span class="card-title blue-text text-darken-2">
-                                {{user.name}}
+                            <img src="/static/img/{{contact.avatar.url}}">
+                            <span class="card-title orange-text accent-2 contact-card-title">
+                                {{contact.name}} {{contact.surname}}
                             </span>
                         </div>
                         <div class="card-content">
-                            <p>I am a very simple card. I am good at containing small bits of information.</p>
+                            <p>Age: {{contact.age}}</p>
+                            <p>Phone: {{contact.phone_number}}</p>
+                            <p>Address: {{contact.address}}</p>
                         </div>
                         <div class="card-action">
-                            <a href="#">This is a link</a>
+                            <a href="#">More</a>
                         </div>
                     </div>
                 </div>

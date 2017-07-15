@@ -1,7 +1,7 @@
 from django.shortcuts import render
-from .models import User
+from .models import Contact
 
 
-def users(request):
-    users = User.objects.all()
-    return render(request, 'index.html', {'users': users})
+def contacts(request):
+    contacts = Contact.objects.all()
+    return render(request, 'index.html', {'contacts': contacts})
