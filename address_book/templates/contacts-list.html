@@ -1,0 +1,27 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <div class="row">
+        {% for contact in contacts %}
+            <div class="col l4">
+                <div class="card medium">
+                    <div class="card-image">
+                        <img src="/static/img/{{contact.avatar.url}}">
+                        <span class="card-title orange-text accent-2 contact-card-title">
+                            {{contact.name}} {{contact.surname}}
+                        </span>
+                    </div>
+                    <div class="card-content">
+                        <p>Age: {{contact.age}}</p>
+                        <p>Phone: {{contact.phone_number}}</p>
+                        <p>Address: {{contact.address}}</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="{% url 'contact_detail' contact.name %}">More</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}

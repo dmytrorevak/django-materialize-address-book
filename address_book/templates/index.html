@@ -10,28 +10,13 @@
 </head>
 <body class="brown lighten-4">
     <div class="container">
-        <div class="row">
-            {% for contact in contacts %}
-                <div class="col l4">
-                    <div class="card medium">
-                        <div class="card-image">
-                            <img src="/static/img/{{contact.avatar.url}}">
-                            <span class="card-title orange-text accent-2 contact-card-title">
-                                {{contact.name}} {{contact.surname}}
-                            </span>
-                        </div>
-                        <div class="card-content">
-                            <p>Age: {{contact.age}}</p>
-                            <p>Phone: {{contact.phone_number}}</p>
-                            <p>Address: {{contact.address}}</p>
-                        </div>
-                        <div class="card-action">
-                            <a href="#">More</a>
-                        </div>
-                    </div>
-                </div>
-            {% endfor %}
-        </div>
+        <nav>
+            <div class="nav-wrapper brown darken-4">
+                <span class="brand-logo center orange-text accent-2">User's contacts list</span>
+            </div>
+  </nav>
+        {% block content %}
+        {% endblock %}
     </div>
 </body>
 </html>

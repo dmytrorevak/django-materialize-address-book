@@ -19,5 +19,7 @@ from users_list.views import *
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', contacts)
+    url(r'^$', contacts, name='contacts'),
+    url(r'^contact/(?P<contact_name>[A-Za-z]+)/$',
+        contact_detail, name='contact_detail')
 ]
