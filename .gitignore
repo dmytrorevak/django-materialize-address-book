@@ -1,5 +1,2 @@
-bin/
-include/
-lib/
-share/
-pip-selfcheck.json
+.env/
+trash/

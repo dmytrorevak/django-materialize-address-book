@@ -1,4 +1,4 @@
-"""address_book URL Configuration
+"""contacts URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.11/topics/http/urls/
@@ -15,11 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from users_list.views import *
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', contacts, name='contacts'),
-    url(r'^contact/(?P<contact_name>[A-Za-z]+)/$',
-        contact_detail, name='contact_detail')
 ]
