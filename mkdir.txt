@@ -1,0 +1,627 @@
+mkdir lesson-10-python
+ls
+cd lesson-10-python/
+touch closures.py
+subl closures.py 
+touch django-info.txt
+subl django-info.txt 
+pip
+sudo apt install python-pip
+sudo apt install python3-pip
+pip --version
+sudo apt uninstall python-pip
+sudo apt-get --purge remove python-pip
+pip --version
+sudo apt install python3-pip
+pip --version
+sudo apt install python3-pip
+pip --version
+pip
+pip3
+sodu apt install python-virtualenv
+sudo apt install python-virtualenv
+virtualenv -p python3 .env
+ls
+ls -la
+source .env/bin/activate
+python
+ls -la
+pip install django
+touch requirements.txt
+subl .
+django-admin startproject logos .
+mv closures.py ..
+ls
+mv django-info.txt ..
+ls
+python manage.py startapp students
+python manage.py runserver
+python manage.py migrate
+python manage.py runserver
+ls
+cd logos/
+mkdir templates
+mkdir static
+cd ..
+python manage.py runserver
+python manage.py createsuperuser
+python manage.py runserver
+sudo grub-install /dev/sda
+git st
+git push origin US_Calculator_branch 
+sudo apt-get install gparted
+ls
+*.jpg mv documents/pictures/
+mv *.jpg documents/pictures/
+sudo apt-get update
+sudo apt-get install mysql-server
+sudo mysql_secure_installation
+systemctl status mysql.service
+mysqladmin -p -u root versio
+sudo apt-get install mysql-workbench
+sudo apt-get clean
+mysql_secure_installation
+mysqladmin -p -u root version
+systemctl status mysql.service
+sudo apt-get autoremove
+sudo apt-get clean
+pytnon --version
+python --version
+pip --version
+pip3 --version
+service mysql status 
+service mysqld stop
+service mysql status 
+service mysql stop
+service mysql status
+service mysql start
+service mysql status
+service mysql stop
+mysql --version
+service mysql start
+service mysql stop
+service mysql start 
+service mysql status
+sudo mysql stop
+service mysql stop 
+service mysql status
+python3
+ls
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get update
+systemctl restart NetworkManager.service
+cd dev/web-developer/python/lesson-09-python-introduction-to-django/
+cd .env/
+ls
+mv Dev/ dev/
+cd dev/
+ls
+mv Repos/ repos/
+mv BasicWeb/ basic-web/
+ls
+mv Cursor/ cursor-it-academy
+mv BasicProgramming/ basic-programming
+mv WebDeveloper/ web-developer/
+ls
+mv Mockups/ mockups
+ls -la
+cd web-developer/
+ls
+mv Frontend/ front-end
+mv Lesson-23-24-hr-advices/ hr-lecture
+m Mysql/ mysql
+mv Python/ python
+ls -la
+mv Mysql/ mysql
+mv PrecourseMaterials/ precourse-materials
+ls -la
+mv Web_Development.pdf web-development.pdf
+ls -la
+nautilus .
+cd ..
+ls
+ls -la
+ls
+cd web-developer/
+ls
+cd python/
+ls
+cd ..
+ls -la
+cd front-end/
+ls -la
+cd ..
+ls 
+cd ../Documents/
+ls
+ls -la
+mv Biology/ biology
+mv Chemistry/ chemistry
+mv Education/ education
+mv English/ english
+mvv Photos/ photos
+mv Photos/ photos
+ls -la
+pip -v
+pip3 -v
+pip3 -V
+virtualenv -V
+virtualenv --version
+cd ../dev/web-developer/python/lesson-09-python-introduction-to-django/
+ls -la
+django -V
+python manage.py runserver
+source .env/bin/activate
+python manage.py runserver
+django _V
+django -V
+cd logos/
+django -V
+cd ../
+pip install -r requirements.txt
+pip3 install -r requirements.txt
+django -V
+python manage.py runserver
+ls -la
+pip3 list
+Django -V
+Django --version
+pip3 install django
+Django --version
+django --version
+python manage.py runserver
+pip3 list
+django-admin -V
+django-help
+django-admin help
+django-admin --version
+cd ../
+django-admin --version
+cd python/lesson-09-python-introduction-to-django/
+deactivate
+django-admin --version
+cd ../
+django-admin --version
+pip3 list
+cd lesson-09-python-introduction-to-django/
+source .env/bin/activate
+.env/bin/pip -V
+.env/bin/pip3 -V
+bin/pip -V
+deactivate
+cd ~
+pip _V
+pip -V
+pip3 -V
+pip3 update
+pip3 --help
+pip3 install --upgrade pip
+pip3 -V
+pip uninstall django
+pip list
+pip3 list
+cd dev/web-developer/python/lesson-09-python-introduction-to-django/
+source .env/bin/activate
+pip list
+pip3 install django
+pip install django
+pytnon -V
+python -V
+python3 -V
+pip3 install django
+pip3 install -r requirements.txt
+sudo pip3 install django
+pip list
+django -V
+Django -V
+django
+django-admin
+django-admin -V
+ls
+python manage.py runserver
+deactivate 
+pip list
+source .env/bin/activate
+python manage.py runserver
+python3 manage.py runserver
+pip freeze
+deac
+deactivate 
+pip freeze
+cd ~/dev/repos/
+ls
+git clone https://github.com/dmytrorevak/test.git
+ls
+cd test/
+pip uninstall django
+sudo pip uninstall django
+sudo pip3 uninstall django
+pip lsit
+pip list
+pip3 list
+ls
+ls -la
+cd ..
+cd angular-bootstrap-web-organizer/
+cd ..
+cd test/
+ls
+git st
+git add .
+git cm -m 'create initial commit'
+git push origin master
+virtualenv -p python3 .
+ls
+source bin/activate
+pip -V
+pip list
+ls
+touch .gitignore
+subl .
+deactivate 
+cd ..
+mv test/ django-address-book
+cd django-address-book/
+source bin/activate
+deactivate 
+cd ..
+ls -la
+rm -rf django-address-book/
+ls -la
+git clone https://github.com/dmytrorevak/django-materialize-address-book.git
+ls -la
+cd django-materialize-address-book/
+touch .gitignore
+virtualenv -p python3 .
+ls -la
+pip install django
+source bin/activate
+pip install django
+pip list
+deactivate 
+pip list
+source bin/activate
+pip list
+pip freeze > requirements.txt
+ls -la
+subl .
+git st
+git add .
+git cm -m 'add gitignore and requirements files'
+git br develop | git co develop
+git br develop
+git co develop 
+django-admin -V
+django-admin startproject .
+django-admin startproject address-book .
+ls -la
+django-admin startproject address_book .
+ls -la
+cd address_book/
+ls
+subl .
+mysql
+service mysql
+service mysql status
+cd ..
+python manage.py makemigrations
+pip install django mysqlclient
+pip3 install django mysqlclient
+pip list
+pip listpip install --upgrade setuptools
+pip install --upgrade setuptools
+pip install mysqlclient
+pip install ez_setup
+pip install mysqlclient
+easy_install -U setuptools
+pip list
+pip install mysqlclient
+pip install --upgrade setuptools
+pip install mysqlclient
+pip list
+pip install mysqlclient
+sudo python ez_setup.py
+sudo pip install mysqlclient
+pip3 install mysqlclient
+pip list
+sudo add-apt-repository -y ppa:linuxgndu/sqlitebrowser
+sudo apt-get update
+sudo apt-get install sqlitebrowser
+python manage.py startapp address_book
+python manage.py startapp users_list
+ls -la
+python manage.py migrate
+python manage.py runserver
+subl .
+python manage.py runserver
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
+python manage.py runserver
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+git st
+git add .
+git cm -m 'add core of address book'
+python manage.py runserver
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+python manage.py makemigrations
+pip install Pillow
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+git st
+git add .
+git cm -m 'add simle user cards'
+git puhs origin develop
+git push origin develop
+cd dev/repos/django-materialize-address-book/
+ls -la
+source bin/activate
+pip list
+subl .
+python manage.py runserver
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+git add .
+git cm -m 'show basic contacts info on the main page'
+python manage.py runserver
+git cm -m 'show basic contacts info on the main page'
+python manage.py runserver
+git add .
+git cm -m 'add contact_detail view and  dynamic url pattern in the list page'
+git push origin develop 
+python manage.py runserver
+deactivate 
+cd build/
+http-server -o -c-1
+cd build/
+http-server -o -c-1
+chorme 
+start .chorme 
+start chorme 
+cd dev/repos/angular-bootstrap-web-organizer/
+ls
+subl .
+git add .
+git cm -m 'add random number function'
+git add .
+git cm -m 'add set PI function'
+git st
+git add .
+git cm -m 'finish with the calculator task'
+git push origin develop 
+git pull origin develop
+git push origin develop 
+git st
+git push origin US_Calculator_branch 
+git br
+git co develop 
+git st
+git pull origin develop 
+gulp build
+gulp watch
+gulp build
+git log
+git reset --hard 6f1147d6f1e54ffa06115bf4603cc2ee314dd68
+git st
+cd `
+cd ~
+cd dev/repos/django-materialize-address-book/
+python manage.py runserver
+ls
+source bin/activate
+python manage.py runserver
+deactivate 
+subl .
+cd dev/repos/
+ls
+cd python-essentials-practice/
+ls 
+git bt
+git br
+git co text-file-task 
+ls
+python3 text-parser.py 
+cd~
+cd ~
+ls
+cd dev/
+ls
+cd web-developer/python/
+ls
+cd lesson-09-python-introduction-to-django/
+ls
+pip list
+source .env/bin/activate
+pip list
+pip3 list
+pip list
+pip3 list
+nautilus
+deactivate 
+rm -rf .env/
+ls -la
+virtualenv -p python3 .env
+source .env/bin/activate
+pip lsit
+pip list
+python manage.py runserver
+pip install -r requirements.txt 
+python manage.py runserver
+deactivate 
+ls
+ls -la
+source bin/activate
+source .env/bin/activate
+python manage.py runserver
+mysqlserver -V
+mysql-server
+sudo apt install mysql-server
+sudo apt install libmysql
+sudo apt install mysql-workbench
+pip install mysqlclient
+python manage.py runserver
+python manage.py migrate
+python manage.py runserver
+deactivate 
+cd dev/repos/django-materialize-address-book/
+ls
+git br
+cd address_book/
+ls
+cd static/
+ls
+cd ..
+ls
+subl .
+cd dev/web-developer/python/lesson-09-python-introduction-to-django/
+python
+ls
+python manage.py runserver
+source .env/bin/activate
+pip list
+python manage.py runserver
+subl .
+python manage.py runserver
+cd students/
+ls
+cd ,,
+cd ..
+ls
+cd logos/
+ls
+cd templates/
+ls
+nautilus
+nautilus .
+cd dev/web-developer/python/lesson-09-python-introduction-to-django/
+nautilus .
+source .env/bin/activate
+python manage.py runserver
+python manage.py makemigrations
+python manage.py migrate
+pip install Pillow
+python manage.py makemigrations
+python manage.py migrate
+python manage.py makemigrations
+python manage.py migrate
+python manage.py makemigrations
+python manage.py migrate
+python manage.py migrate students 0001
+python manage.py migrate
+python manage.py shell
+python manage.py runserver
+subl .
+ls
+cd logos/
+ls
+mkdir media
+top
+sudo add-apt-repository ppa:fossfreedom/indicator-sysmonitor
+sudo apt-get update
+sudo apt-get install indicator-sysmonitor
+top
+ls
+cd 
+pwd
+sudo poweroff 
+cd dev/repos/
+ls
+git clone https://github.com/dmytrorevak/web-developer.git .
+git clone https://github.com/dmytrorevak/web-developer.git
+ls
+cd web-developer/
+ls -la
+git br
+ls -la
+nautilus .
+cd ..
+ls
+git clone https://github.com/dmytrorevak/fitness-responsive-mockup.git
+cd fitness-responsive-mockup/
+ls
+cd fonts/
+cd ..
+subl .
+git st
+git add .
+git cm -m 'add complete mockup'
+git push origin master
+git br gh-pages
+git push origin gh-pages 
+git config --global user.name "dmytrorevak"
+git config --global user.email dmytro.revak@gmail.com
+git config --list
+subl .
+touch README.md
+git add .
+git cm -m 'add readme file'
+git push origin master
+git add .
+git cm -m 'add readme heading'
+git push origin master
+mkdir css
+mv *.css css/
+ls
+git add .
+git cm -m 'add css folder'
+git push origin master
+cd ..
+ls
+rm -rf fitness-responsive-mockup/
+ls
+cd python-essentials-practice/
+git st
+ls
+subl test.py 
+ls
+rm -rf test.py 
+ls
+git st
+git br
+git br iteratos-generators 
+git co iteratos-generators 
+ls
+touch iterator-generator-tasks.py
+subl .
+python3 iterator-generator-tasks.py 
+git add .
+git st
+git cm -m 'add reverse iterator and generator'
+git st
+cd dev/repos/
+ls
+git clone https://github.com/dmytrorevak/asia-holiday-mockup.git
+cd asia-holiday-mockup/
+ls
+touch README.md
+subl .
+git st
+git add .
+git cm  -m 'add full project'
+git pusho rigin master
+git pusho origin master
+git push origin master
+git br gh-pages
+git push origin gh-pages 
+cd ..
+ls
+rm -rf asia-holiday-mockup/
+ls
+cd django-materialize-address-book/
+git br
