@@ -1,0 +1,38 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <div class="row">
+        <div class="col l12">
+            <div class="card horizontal medium">
+                <div class="card-image">
+                    <img src="/static/img/{{contact.avatar.url}}">
+                    <span class="card-title orange-text accent-2 contact-card-title">
+                        {{contact.name}} {{contact.surname}}
+                    </span>
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <p>
+                            <span class="contact-detail-field">
+                                Age: {{contact.age}}
+                            </span>
+                        </p>
+                        <p>
+                            <span class="contact-detail-field">
+                                Phone: {{contact.phone_number}}
+                            </span>
+                        </p>
+                        <p>
+                            <span class="contact-detail-field">
+                                Address: {{contact.address}}
+                            </span>    
+                        </p>
+                        <h5>Description:</h5>
+                        <p>{{contact.description}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

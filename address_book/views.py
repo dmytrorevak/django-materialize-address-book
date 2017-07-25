@@ -4,16 +4,17 @@ from django.contrib import auth
 
 
 def contacts_list_view(request):
-    print(request.user)
-    if request.user.is_authenticated():
-        return render(request, 'address_book/index.html',
-                      {'user': request.user})
-    else:
-        return render(request, 'address_book/err.html')
+    # print(request.user)
+    # if request.user.is_authenticated():
+    #     return render(request, 'address_book/index.html',
+    #                   {'user': request.user})
+    # else:
+    #     return render(request, 'address_book/err.html')
+    return render(request, 'address_book/index.html', {'user': request.user})
 
 
 def login_view(request):
-    return render(request, 'address_book/login.html')
+    return render(request, 'address_book/address-book-login.html')
 
 
 def auth_view(request):
@@ -30,3 +31,8 @@ def auth_view(request):
 
     # else:
     # return HttpResponseRedirect('address_book/err')
+
+
+def logout_view(request):
+    auth.logout(request)
+    return HttpResponseRedirect('/login')

@@ -1,0 +1,35 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <nav>
+        <div class="nav-wrapper brown darken-4">
+            <span class="brand-logo orange-text accent-2">User's contacts list</span>
+            <ul class="right hide-on-med-and-down">
+                <li><a class="waves-effect waves-light orange btn">Log In</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="row">
+        {% for contact in contacts %}
+            <div class="col l4">
+                <div class="card hoverable medium">
+                    <div class="card-image">
+                        <img src="/static/img/{{contact.avatar.url}}">
+                        <span class="card-title orange-text accent-2 contact-card-title">
+                            {{contact.name}} {{contact.surname}}
+                        </span>
+                    </div>
+                    <div class="card-content">
+                        <p>Age: {{contact.age}}</p>
+                        <p>Phone: {{contact.phone_number}}</p>
+                        <p>Address: {{contact.address}}</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="{% url 'contact_detail' contact.name %}">More</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}

@@ -1,0 +1,21 @@
+.card .contact-card-title {
+    font-weight: bold;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.contact-detail-field {
+    font-size: 1.4rem;
+}
+
+/*.login-form div:parent {*/
+    /*background-color: blue;*/
+/*}*/
+
+.login-form {
+    background-color: red;
+    /*padding: 100px 0;*/
+    position: relative;
+    top: 100%;
+    /*left:50%;*/
+    /*transform: translate(0, -50%);*/
+}
