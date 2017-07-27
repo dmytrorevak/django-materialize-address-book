@@ -21,6 +21,9 @@
     <div class="wrapper brown lighten-4">
         {% block content %}
         {% endblock %}
+        {% for contact in user_contacts %}
+            {{contact}}
+        {% endfor %}
     </div>
 </body>
 </html>

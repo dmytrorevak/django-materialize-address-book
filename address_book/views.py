@@ -1,13 +1,11 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
+from .models import *
 
 
 @login_required
 def contacts_list_view(request):
-    # print(request.user)
-    # if request.user.is_authenticated():
-    #     return render(request, 'address_book/index.html',
-    #                   {'user': request.user})
-    # else:
-    #     return render(request, 'address_book/err.html')
-    return render(request, 'address_book/base.html', {'user': request.user})
+    current_user = request.user
+    user_contacts = Contact.objects.filter(user_id=current_user.id)
+    return render(request, 'address_book/base.html',
+                  {'user_contacts': user_contacts})
