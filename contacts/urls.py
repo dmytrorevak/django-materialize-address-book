@@ -21,5 +21,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', RedirectView.as_view(url='address_book/',
                                     permanent=False)),
+    url(r'^accounts/', include('django.contrib.auth.urls')),
     url(r'^address_book/', include('address_book.urls')),
 ]
